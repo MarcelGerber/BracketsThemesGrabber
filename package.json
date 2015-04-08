@@ -1,6 +1,6 @@
 {
-  "name": "BracketsExtensionGrabber",
-  "description": "Downloads all Brackets extensions to a local folder for inspection",
+  "name": "BracketsThemesGrabber",
+  "description": "Downloads all Brackets themes to a local folder for inspection",
   "dependencies": {
     "request": "~2.34.0",
     "decompress-zip": "~0.0.4",
