@@ -115,6 +115,13 @@ http.get({
     
     try {
         registry = JSON.parse(body);
+        var newRegistry = {};
+        registry = _.forEach(registry, function (extension, name) {
+            if (extension && extension.metadata && extension.metadata.theme && extension.metadata.theme.file) {
+                newRegistry[name] = extension;
+            }
+        });
+        registry = newRegistry;
     } catch (e) {
         console.error("Error parsing registry", e);
         console.log(body);
